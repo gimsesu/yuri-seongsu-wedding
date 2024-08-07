@@ -1,15 +1,15 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const BorderedTable = styled.table`
   border-top: 1px solid black;
   /* border-bottom: 1px solid black; */
   width: 100%;
 
-  tr:first-child td {
+  tr:first-of-type td {
     border-bottom: 1px solid black;
   }
 
-  td:first-child {
+  td:first-of-type {
     font-weight: 700;
     width: 25%;
   }
@@ -25,7 +25,7 @@ export const TimelineTable = styled.table`
   border-left: 1px solid black;
   padding-left: 1rem;
 
-  td:first-child {
+  td:first-of-type {
     font-weight: 700;
     width: 25%;
   }
@@ -34,9 +34,11 @@ export const TimelineTable = styled.table`
     vertical-align: top;
     padding: 0 0 2rem;
   }
+
   tr:last-of-type td {
     padding: 0;
   }
+
   ul {
     font-size: 0.8em;
     list-style: lower-roman;

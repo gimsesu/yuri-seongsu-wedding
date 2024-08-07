@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
-import React from 'react';
-import { COLORS } from 'src/assets/theme';
+import styled from "@emotion/styled";
+import React from "react";
+import { COLORS } from "src/assets/theme";
 
 const Collapsible = ({
   title,
@@ -12,14 +12,14 @@ const Collapsible = ({
   const [collapsed, setCollapsed] = React.useState(true);
   return (
     <Container>
-      <div onClick={() => setCollapsed(prev => !prev)}>{title}</div>
+      <div onClick={() => setCollapsed((prev) => !prev)}>{title}</div>
       {!collapsed && <Contents>{contents}</Contents>}
     </Container>
   );
 };
 
 const Container = styled.div`
-  background: ${COLORS.highlight3};
+  background: ${COLORS.bg4Primary};
   border-radius: 6px;
   margin-bottom: 12px;
   padding: 10px 13px;

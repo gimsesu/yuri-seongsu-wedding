@@ -1,49 +1,54 @@
-import React from 'react';
-import { COLORS } from 'src/assets/theme';
-import Collapsible from 'src/components/Collapsible';
-import Section from 'src/components/Section';
-import copyTextToClipboard from 'src/utils/copyToClipboard';
+import React from "react";
+import { COLORS } from "src/assets/theme";
+import Collapsible from "src/components/Collapsible";
+import Section from "src/components/Section";
+import copyTextToClipboard from "src/utils/copyToClipboard";
 
 const AccountSection = () => {
   return (
-    <Section backgroundColor={COLORS.highlight2} title="멀리서 마음 전하기">
+    <Section
+      backgroundPrimaryColor={COLORS.bg4Primary}
+      backgroundSecondaryColor={COLORS.bg4Secondary}
+      title="멀리서 마음 전하기"
+    >
+      <Collapsible
+        title="신랑측 계좌번호 보기"
+        contents={
+          <div>
+            <CopyInfo />
+            <Acocunt bankName="농협" accountNo="1072-02-079576" name="김목중" />
+            <Acocunt
+              bankName="농협"
+              accountNo="601138-56-046470"
+              name="김문자"
+            />
+            <Acocunt
+              bankName="카카오뱅크"
+              accountNo="3333-16-3343278"
+              name="김성수"
+            />
+          </div>
+        }
+      />
       <Collapsible
         title="신부측 계좌번호 보기"
         contents={
           <div>
             <CopyInfo />
             <Acocunt
-              bankName="하나은행"
-              accountNo="742-910051-74007"
-              name="진유림"
+              bankName="우체국"
+              accountNo="400523-02-069315"
+              name="이길재"
             />
             <Acocunt
-              bankName="국민은행"
-              accountNo="473-201010-03539"
-              name="김은숙"
-            />
-          </div>
-        }
-      />
-      <Collapsible
-        title="신랑측 계좌번호 보기"
-        contents={
-          <div>
-            <CopyInfo />
-            <Acocunt
-              bankName="우리은행"
-              accountNo="1002-040-231235"
-              name="장기효"
+              bankName="농협"
+              accountNo="505055-51-062666"
+              name="김정미"
             />
             <Acocunt
-              bankName="기업은행"
-              accountNo="011-601-8247"
-              name="장채환"
-            />
-            <Acocunt
-              bankName="기업은행"
-              accountNo="010-4081-8246"
-              name="서순옥"
+              bankName="카카오뱅크"
+              accountNo="3333-14-1723339"
+              name="이유리"
             />
           </div>
         }
@@ -58,7 +63,7 @@ const AccountSection = () => {
 };
 
 const CopyInfo = () => (
-  <div style={{ fontSize: '0.9em', fontStyle: 'italic', marginBottom: 3 }}>
+  <div style={{ fontSize: "0.9em", fontStyle: "italic", marginBottom: 3 }}>
     클릭하면 계좌번호가 복사됩니다.
   </div>
 );
@@ -80,12 +85,13 @@ const Acocunt = ({
         });
       }}
       style={{
-        display: 'flex',
-        justifyContent: 'space-between',
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
         marginBottom: 5,
       }}
     >
-      <div>{bankName}</div>
+      <div style={{ flexBasis: "12%" }}>{bankName}</div>
       <div>{accountNo}</div>
       <div>{name}</div>
     </div>

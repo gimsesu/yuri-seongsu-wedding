@@ -1,41 +1,31 @@
-import React, { useEffect } from 'react';
-import Footer from 'src/components/Footer';
-import AccountSection from './AccountSection';
-import GallarySection from './GallarySection';
-import IntroSection from './IntroSection';
-import OnlineSection from './OnlineSection';
-import RouteSection from './RouteSection';
-import SplashSection from './SplashSection';
-import TimelineSection from './TimelineSection';
-import NoticeSection from './NoticeSection';
-import * as amplitude from '@amplitude/analytics-browser';
+import React, { useEffect } from "react";
+import Footer from "src/components/Footer";
+import IntroSection from "./IntroSection";
+import MainImageSection from "./MainImageSection";
+import * as amplitude from "@amplitude/analytics-browser";
+import MujuEventSection from "./MujuEventSection";
+import SeoulEventSection from "./SeoulEventSection";
+import AccountSection from "./AccountSection";
+import GallerySection from "./GallerySection";
+import { STUDIO_PICS } from "../../assets/images";
 
 const IndexPage = () => {
   useEffect(() => {
     const amplitudeKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
     if (amplitudeKey != null) {
-      console.info('Initialized Amplitude!');
+      console.info("Initialized Amplitude!");
       amplitude.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!);
     }
   }, []);
 
   return (
     <>
-      {/* <NavBar /> */}
-
-      <SplashSection />
+      <MainImageSection />
       <IntroSection />
-      <NoticeSection />
-      <TimelineSection />
-
-      <RouteSection />
-      {/* <GwangjooRouteSection /> */}
-      <OnlineSection />
-      {/* <RSVPSection /> */}
+      <MujuEventSection />
+      <SeoulEventSection />
       <AccountSection />
-      {/* <ShareSection /> */}
-      <GallarySection />
-
+      <GallerySection images={STUDIO_PICS} />
       <Footer />
     </>
   );

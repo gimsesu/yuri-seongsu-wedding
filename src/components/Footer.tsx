@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
-import React from 'react';
-import { GREYS } from 'src/assets/theme';
+import styled from "@emotion/styled";
+import React from "react";
+import { GREYS } from "src/assets/theme";
 
 const TimelineSection = () => {
   return (
@@ -9,16 +9,12 @@ const TimelineSection = () => {
       <table>
         <tbody>
           <tr>
-            <td>디자인</td>
-            <td>정윤지</td>
+            <td>글</td>
+            <td>이유리</td>
           </tr>
           <tr>
-            <td>개발</td>
-            <td>진유림, 장기효</td>
-          </tr>
-          <tr>
-            <td>일러스트</td>
-            <td>진유림</td>
+            <td>만듦</td>
+            <td>김성수</td>
           </tr>
         </tbody>
       </table>

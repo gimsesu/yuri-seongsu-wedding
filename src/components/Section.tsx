@@ -1,27 +1,33 @@
-import React from 'react';
+import React from "react";
 
 const Section = ({
-  backgroundColor,
+  backgroundPrimaryColor,
+  backgroundSecondaryColor,
   title,
   children,
   style,
+  headerStyle,
 }: {
-  backgroundColor: string;
+  backgroundPrimaryColor: string;
+  backgroundSecondaryColor: string;
   title?: string;
   children: React.ReactNode;
   style?: React.CSSProperties;
+  headerStyle?: React.CSSProperties;
 }) => {
   return (
     <section
       style={{
-        background: backgroundColor,
+        background: `linear-gradient(135deg, ${backgroundPrimaryColor}, ${backgroundSecondaryColor})`,
         padding: `${GAP}px 16px`,
-        borderBottom: '1px solid black',
+        borderBottom: "1px solid black",
         ...style,
       }}
     >
-      <div style={{ maxWidth: 800, margin: '0 auto' }}>
-        {title !== undefined && <h2 style={{ marginBottom: GAP }}>{title}</h2>}
+      <div style={{ maxWidth: 800, margin: "0 auto" }}>
+        {title !== undefined && (
+          <h1 style={{ marginBottom: GAP, ...headerStyle }}>{title}</h1>
+        )}
         {children}
       </div>
     </section>

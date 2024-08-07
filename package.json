@@ -1,5 +1,5 @@
 {
-  "name": "yurim-josh-wedding-card",
+  "name": "yuri-seongsu-wedding",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,25 +10,38 @@
   },
   "dependencies": {
     "@amplitude/analytics-browser": "^1.2.0",
+    "@babel/core": "^7.25.2",
     "@babel/preset-react": "^7.18.6",
     "@emotion/babel-plugin": "^11.10.0",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-responsive-carousel": "^3.2.23"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.3.21",
+    "imagemin": "^9.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "next": "^14.2.4",
+    "postcss": "^8.4.40",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-hooks-global-state": "^2.1.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-swipeable": "^7.0.1",
+    "react-use-keypress": "^1.3.1",
+    "tailwindcss": "^3.4.7"
   },
   "devDependencies": {
     "@types/node": "18.7.8",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.8.0",
+    "eslint-config-next": "^14.2.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.7.1",
+    "prettier": "3.3.2",
     "typescript": "4.7.4"
   }
 }
