@@ -24,7 +24,6 @@ const MainImageSection = () => {
 
 const Container = styled.div`
   max-width: 100%;
-  //z-index: -1;
   position: relative;
 `;
 

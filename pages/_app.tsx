@@ -17,11 +17,23 @@ function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="2024년 10월 12일 토요일 12시, 세상의 모든 아침, 여의도"
         />
-        <meta property="og:image" content="./meta.png" />
+        <meta property="og:image" content="./meta.jpeg" />
         <meta
           property="og:url"
           content="https://yuri-seongsu-wedding.vercel.app/"
         />
+        {/* twitter */}
+        <meta name="twitter:title" content="유리🤍성수 결혼해요!" />
+        <meta
+          name="twitter:description"
+          content="2024년 10월 12일 토요일 12시, 세상의 모든 아침, 여의도"
+        />
+        <meta name="twitter:image" content="./meta.jpeg" />
+        <meta
+          name="twitter:url"
+          content="https://yuri-seongsu-wedding.vercel.app/"
+        />
+        {/* favicon */}
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -98,6 +110,7 @@ function App({ Component, pageProps }: AppProps) {
           content="/favicons/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        {/* kakaomap */}
         <script
           className="daum_roughmap_loader_script"
           src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
