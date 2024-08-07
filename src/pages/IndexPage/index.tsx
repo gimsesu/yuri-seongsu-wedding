@@ -7,7 +7,6 @@ import MujuEventSection from "./MujuEventSection";
 import SeoulEventSection from "./SeoulEventSection";
 import AccountSection from "./AccountSection";
 import GallerySection from "./GallerySection";
-import { STUDIO_PICS } from "../../assets/images";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -25,7 +24,7 @@ const IndexPage = () => {
       <MujuEventSection />
       <SeoulEventSection />
       <AccountSection />
-      <GallerySection images={STUDIO_PICS} />
+      <GallerySection />
       <Footer />
     </>
   );

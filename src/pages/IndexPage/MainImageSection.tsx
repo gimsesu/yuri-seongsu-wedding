@@ -10,9 +10,6 @@ const MainImageSection = () => {
         src={wedding}
         alt="웨딩"
         draggable={false}
-        // width={1485}
-        // height={2227}
-        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         quality={100}
         priority={true}
         style={{
