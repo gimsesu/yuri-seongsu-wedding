@@ -17,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="2024년 10월 12일 토요일 12시, 세상의 모든 아침, 여의도"
         />
-        <meta property="og:image" content="./meta.jpeg" />
+        <meta property="og:image" content="/meta.jpeg" />
         <meta
           property="og:url"
           content="https://yuri-seongsu-wedding.vercel.app/"
@@ -28,7 +28,7 @@ function App({ Component, pageProps }: AppProps) {
           name="twitter:description"
           content="2024년 10월 12일 토요일 12시, 세상의 모든 아침, 여의도"
         />
-        <meta name="twitter:image" content="./meta.jpeg" />
+        <meta name="twitter:image" content="/meta.jpeg" />
         <meta
           name="twitter:url"
           content="https://yuri-seongsu-wedding.vercel.app/"
