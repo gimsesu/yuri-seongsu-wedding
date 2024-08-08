@@ -5,7 +5,7 @@ export default function MujuEventSection() {
   return (
     <section
       className={
-        "bg-gradient-to-br from-c-3a to-c-3b py-8 px-4 border-b border-solid border-black"
+        "bg-gradient-to-br from-c-2a to-c-2b py-8 px-4 border-b border-solid border-black"
       }
     >
       <div className={"max-w-[800px] mx-auto my-0"}>
@@ -45,7 +45,7 @@ const InfoTable = () => {
               "align-top px-0 py-4 first-of-type:font-bold first-of-type:w-1/4"
             }
           >
-            24년 9월 28일 토요일 12:00
+            24년 10월 05일 토요일 12:00
           </td>
         </tr>
         <tr

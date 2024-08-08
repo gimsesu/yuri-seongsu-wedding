@@ -23,14 +23,23 @@ module.exports = {
         "taller-than-854": { raw: "(min-height: 854px)" },
       },
       colors: {
+        "c-0a": "#f1e69d",
+        "c-0b": "#81ad46",
+
         "c-1a": "#e9e8e8",
         "c-1b": "#d4d4d4",
-        "c-2a": "#e4e2d6",
-        "c-2b": "#f1e69d",
+
+        // "c-2a": "#e4e2d6",
+        // "c-2b": "#f8db20",
+
+        "c-2a": "#F3CA52",
+        "c-2b": "#7ABA78",
+
         "c-3a": "#cbdec4",
         "c-3b": "#81ad46",
-        "c-4a": "#55b252",
-        "c-4b": "#eed099 60%",
+
+        "c-4a": "#CCD5AE",
+        "c-4b": "#FEFAE0",
         "c-grey": "#323232",
         "strong-blue": "#000000b5",
       },

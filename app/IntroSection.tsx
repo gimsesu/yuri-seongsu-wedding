@@ -4,7 +4,7 @@ export default function IntroSection() {
   return (
     <section
       className={
-        "bg-gradient-to-br from-c-1a to-c-1b py-8 px-4 border-b border-solid border-black text-center"
+        "bg-gradient-to-br from-c-0a to-c-0b py-8 px-4 border-b border-solid border-black text-center"
       }
     >
       <div className={"max-w-[800px] mx-auto my-0"}>
@@ -14,7 +14,7 @@ export default function IntroSection() {
 
           <p>앞으로 주어진 계절들도 기대가 됩니다.</p>
 
-          <p>서로의 고유한 빛을 지켜주며 살았습니다.</p>
+          <p>서로의 고유한 빛을 지켜주며 만났습니다.</p>
 
           <p>그렇게 빚어낸 저희의 모습을 만나러 와 주세요.</p>
         </div>
