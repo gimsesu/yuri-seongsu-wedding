@@ -14,6 +14,9 @@ module.exports = {
       flexBasis: {
         "3/25": "12%",
       },
+      borderWidth: {
+        0.5: "0.5px",
+      },
       boxShadow: {
         highlight: "inset 0 0 0 1px rgba(255, 255, 255, 0.05)",
       },

@@ -21,10 +21,12 @@ export default function MujuEventSection() {
 const InfoTable = () => {
   return (
     <table
-      className={"border-t border-solid border-black w-full mx-0 my-5 relative"}
+      className={
+        "border-t-0.5 border-solid border-black w-full mx-0 my-5 relative"
+      }
     >
       <tbody>
-        <tr className={"border-b border-solid border-black"}>
+        <tr className={"border-b-0.5 border-solid border-black"}>
           <td
             className={
               "align-top px-0 py-4 first-of-type:font-bold first-of-type:w-1/4"
@@ -34,7 +36,7 @@ const InfoTable = () => {
           </td>
           <td className={"align-top px-0 py-4"}>24년 10월 05일 토요일 12:00</td>
         </tr>
-        <tr className={"border-b border-solid border-black"}>
+        <tr className={"border-b-0.5 border-solid border-black"}>
           <td
             className={
               "align-top px-0 py-4 first-of-type:font-bold first-of-type:w-1/4"
