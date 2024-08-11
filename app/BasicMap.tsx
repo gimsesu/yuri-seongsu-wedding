@@ -3,17 +3,8 @@
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 import Script from "next/script";
 
-export default function BasicMap({
-  lat,
-  lng,
-  locationId,
-}: {
-  lat: number;
-  lng: number;
-  locationId: number;
-}) {
+export default function BasicMap({ lat, lng }: { lat: number; lng: number }) {
   const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAOJSKEY!}&libraries=services,clusterer,drawing&autoload=false`;
-  const MapLink = `https://map.kakao.com/link/map/${locationId}`;
 
   return (
     <div>

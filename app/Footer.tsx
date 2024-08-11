@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className={"bg-c-grey text-white p-6 flex justify-between"}>
+    <footer className={"bg-c-grey text-white px-6 py-5 flex justify-between"}>
       <h3>CREDITS</h3>
       <table>
         <tbody>

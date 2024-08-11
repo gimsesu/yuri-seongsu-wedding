@@ -12,11 +12,7 @@ export default function MujuEventSection() {
           누구든지 오셔서 따뜻한 밥 한 끼 드시고 가세요.
         </div>
         <InfoTable />
-        <BasicMap
-          lat={35.82795551161191}
-          lng={127.6389739124942}
-          locationId={26096357}
-        />
+        <BasicMap lat={35.82795551161191} lng={127.6389739124942} />
       </div>
     </section>
   );

@@ -8,11 +8,7 @@ export default function SeoulEventSection() {
         <h1 className={"mb-4"}>두 번째 장소!</h1>
         <div>가족과 친지분들을 모시고 소소한 결혼식을 올립니다.</div>
         <InfoTable />
-        <BasicMap
-          lat={37.522172488709955}
-          lng={126.91992017913941}
-          locationId={27353169}
-        />
+        <BasicMap lat={37.522172488709955} lng={126.91992017913941} />
       </div>
     </section>
   );
