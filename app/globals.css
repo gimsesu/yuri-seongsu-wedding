@@ -19,6 +19,7 @@ body {
     word-break: keep-all;
     font-size: 18px;
     font-family: "Gowun Batang", "serif", "Noto Sans KR", sans-serif;
+    letter-spacing: -0.05rem;
     min-height: 300vh;
     max-width: 100%;
     overflow-x: hidden;

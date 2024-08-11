@@ -14,10 +14,6 @@ module.exports = {
       flexBasis: {
         "3/25": "12%",
       },
-      padding: {
-        // 0.3rem
-        1.25: "0.3rem",
-      },
       borderWidth: {
         0.5: "0.5px",
       },
