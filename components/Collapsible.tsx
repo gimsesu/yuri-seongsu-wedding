@@ -12,7 +12,7 @@ const Collapsible = ({
   return (
     <div
       className={
-        "bg-c-4a rounded-md mb-3 px-3.5 py-2.5 border border-solid border-strong-blue cursor-pointer"
+        "bg-c-table rounded-md mb-3 px-3.5 py-2.5 border border-solid border-strong-blue cursor-pointer"
       }
     >
       <div onClick={() => setCollapsed((prev) => !prev)}>{title}</div>

@@ -5,13 +5,9 @@ import copyTextToClipboard from "../utils/copyToClipboard";
 
 export default function AccountSection() {
   return (
-    <section
-      className={
-        "bg-gradient-to-br from-c-4a to-c-4b py-8 px-4 border-b border-solid border-black"
-      }
-    >
+    <section className={"py-8 px-4 border-b border-solid border-black"}>
       <div className={"max-w-[800px] my-0 mx-auto"}>
-        <h1 className={"mb-8"}>멀리서 마음 전하기</h1>
+        <h1 className={"mb-4"}>멀리서 마음 전하기</h1>
         <Collapsible
           title="신랑측 계좌번호 보기"
           contents={

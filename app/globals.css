@@ -18,12 +18,10 @@ body {
     line-height: 1.6;
     word-break: keep-all;
     font-size: 18px;
-    font-family: "Gowun Batang", "Noto Sans KR", sans-serif;
-
+    font-family: "Gowun Batang", "serif", "Noto Sans KR", sans-serif;
     min-height: 300vh;
     max-width: 100%;
     overflow-x: hidden;
-    /*background-color: papayawhip;*/
     background: none;
 }
 
@@ -33,7 +31,6 @@ body {
 
 a {
     color: #2f96d9;
-    /* text-decoration: none; */
 }
 
 * {
@@ -63,13 +60,8 @@ h4 {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.3rem;
     font-weight: 700;
-}
-
-h2 {
-    font-size: 1.7em;
-    font-weight: 500;
 }
 
 .removeMargin {

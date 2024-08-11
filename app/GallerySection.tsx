@@ -4,13 +4,9 @@ import React from "react";
 
 export default function GallerySection() {
   return (
-    <section
-      className={
-        "bg-gradient-to-br from-c-1a to-c-1b py-8 px-4 border-b border-solid border-black"
-      }
-    >
+    <section className={"py-8 px-4 border-b border-solid border-black"}>
       <div className={"max-w-[800px] mx-auto my-0"}>
-        <h1 className={"mb-8"}>우리의 모습</h1>
+        <h1 className={"mb-4"}>우리의 모습</h1>
         <div className="columns-1 gap-4">
           {STUDIO_PICS.map((pic, index) => (
             <div
@@ -19,7 +15,7 @@ export default function GallerySection() {
             >
               <Image
                 alt="Gallery photo"
-                className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                className="transform rounded-lg brightness-100"
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 placeholder="blur"
                 blurDataURL={pic.blurDataURL}

@@ -21,13 +21,3 @@ export default function MainImageSection() {
     </div>
   );
 }
-
-// const Container = styled.div`
-//   max-width: 100%;
-//   position: relative;
-// `;
-//
-// const StyledImage = styled(Image)`
-//   position: relative !important;
-//   height: unset !important;
-// `;

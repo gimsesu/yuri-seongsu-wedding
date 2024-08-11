@@ -1,34 +1,29 @@
 "use client";
-import useKakaoLoader from "../components/use-kakao-loader";
-import { Map } from "react-kakao-maps-sdk";
-import React from "react";
 
-export default function BasicMap({ x, y }: { x: number; y: number }) {
-  useKakaoLoader();
+import { Map, MapMarker } from "react-kakao-maps-sdk";
+import Script from "next/script";
 
-  // useEffect(() => {
-  //   if (rendered.current !== 0) {
-  //     return;
-  //   }
-  //   new daum.roughmap.Lander({
-  //     timestamp: "1720928602134",
-  //     key: "2k29e",
-  //     mapHeight: "360",
-  //   }).render();
-  //   rendered.current += 1;
-  // }, []);
+export default function BasicMap({
+  lat,
+  lng,
+  locationId,
+}: {
+  lat: number;
+  lng: number;
+  locationId: number;
+}) {
+  const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAOJSKEY!}&libraries=services,clusterer,drawing&autoload=false`;
+  const MapLink = `https://map.kakao.com/link/map/${locationId}`;
 
   return (
-    <Map
-      className={"w-full, h-80"}
-      center={{ x: x, y: y }}
-      level={3}
-      // style={{ width: "100%", height: "360px" }}
-    />
-    // <div
-    //   id="daumRoughmapContainer1720928602134"
-    //   className="root_daum_roughmap root_daum_roughmap_landing"
-    //   style={{ width: "100%" }}
-    // ></div>
+    <div>
+      <Script src={KAKAO_SDK_URL} strategy="beforeInteractive" />
+      <Map
+        center={{ lat: lat, lng: lng }}
+        style={{ width: "100%", height: "20rem" }}
+      >
+        <MapMarker position={{ lat: lat, lng: lng }}></MapMarker>
+      </Map>
+    </div>
   );
 }
