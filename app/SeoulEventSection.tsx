@@ -47,7 +47,7 @@ const InfoTable = () => {
         <tr>
           <td
             className={
-              "align-top px-0 py-4 first-of-type:font-bold first-of-type:w-1/4 text-sm"
+              "align-top px-0 py-4 first-of-type:font-bold first-of-type:w-1/4"
             }
           >
             주소
